@@ -362,7 +362,7 @@
                         <sections>
                             <tableViewSection headerTitle="I want to meet people who are" id="sxm-zl-ddR">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" editingAccessoryType="checkmark" id="mrB-1C-pYm">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="CellSelectable" id="mrB-1C-pYm">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mrB-1C-pYm" id="XnS-0Y-Jnd">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -389,9 +389,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="lEc-39-rLo" firstAttribute="leading" secondItem="XnS-0Y-Jnd" secondAttribute="leadingMargin" constant="5" id="XtH-yQ-J2F">
-                                                    <variation key="widthClass=compact" constant="12"/>
+                                                    <variation key="widthClass=compact" constant="10"/>
                                                 </constraint>
-                                                <constraint firstItem="lEc-39-rLo" firstAttribute="centerY" secondItem="XnS-0Y-Jnd" secondAttribute="centerY" id="wyw-Te-s4h"/>
+                                                <constraint firstItem="lEc-39-rLo" firstAttribute="centerY" secondItem="XnS-0Y-Jnd" secondAttribute="centerY" id="wyw-Te-s4h">
+                                                    <variation key="widthClass=compact" constant="3"/>
+                                                </constraint>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
@@ -417,58 +419,24 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Facebook" id="oq0-JX-UJ9">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" editingAccessoryType="checkmark" id="ozN-5A-eeR">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" textLabel="Lgp-gc-UHw" style="IBUITableViewCellStyleDefault" id="ozN-5A-eeR">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ozN-5A-eeR" id="kEO-X7-wz5">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2l-Nc-hVm">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="200" id="Q2q-lc-2VM"/>
-                                                    </constraints>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lgp-gc-UHw">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="Q2q-lc-2VM"/>
-                                                        </mask>
-                                                    </variation>
                                                     <variation key="widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="Q2q-lc-2VM"/>
-                                                        </mask>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="j2l-Nc-hVm" firstAttribute="centerY" secondItem="kEO-X7-wz5" secondAttribute="centerY" id="8rY-Nq-5su"/>
-                                                <constraint firstItem="j2l-Nc-hVm" firstAttribute="leading" secondItem="kEO-X7-wz5" secondAttribute="leadingMargin" constant="5" id="rxg-F8-5cv">
-                                                    <variation key="widthClass=compact" constant="12"/>
-                                                </constraint>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="j2l-Nc-hVm"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <exclude reference="8rY-Nq-5su"/>
-                                                    <exclude reference="rxg-F8-5cv"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="subviews">
-                                                    <include reference="j2l-Nc-hVm"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <include reference="8rY-Nq-5su"/>
-                                                    <include reference="rxg-F8-5cv"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" editingAccessoryType="checkmark" id="Oh0-Ni-qKZ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Oh0-Ni-qKZ">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oh0-Ni-qKZ" id="oUj-Q8-uGg">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -597,7 +565,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Twitter" id="a8q-bw-BUk">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" editingAccessoryType="checkmark" id="zwa-Yz-Mws">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zwa-Yz-Mws">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zwa-Yz-Mws" id="K3n-k0-Dcu">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -648,7 +616,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" editingAccessoryType="checkmark" id="OhY-Ai-cVp">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" id="OhY-Ai-cVp">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OhY-Ai-cVp" id="7f7-yJ-wAc">
                                             <autoresizingMask key="autoresizingMask"/>
