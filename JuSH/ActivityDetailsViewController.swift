@@ -24,9 +24,23 @@ class ActivityDetailsViewController: UIViewController {
     
     @IBOutlet weak var buttonGo: UIButton!
     
-    @IBAction func buttonGoTouched(sender: AnyObject) {
-        
+    
+    @IBOutlet weak var overlay: UIVisualEffectView!
+    
+    @IBOutlet weak var vibrantBox: UIVisualEffectView!
+
+    @IBAction func onButtonGoTouched(sender: AnyObject) {
+        overlay.hidden = false
+       /* let constraints: [NSLayoutConstraint]  =vibrantBox.constraints() as! [NSLayoutConstraint]
+        for i in 0...constraints.count{
+            var c = constraints[i]
+            println(c. +":" + c)
+        } */
+        let b: CGRect = vibrantBox.bounds
+        NSLog("ORIGN %f : %f", b.origin.x, b.origin.y)
+        NSLog("Size: %f x %f", b.width, b.height)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +51,7 @@ class ActivityDetailsViewController: UIViewController {
         self.labelActivityTime.text = "at " + self.selectedActivity!.date_time
         self.labelActivityLocation.text = "on " + self.selectedActivity!.venue_name
         
-        
+        self.overlay.hidden = true
     
     }
 
