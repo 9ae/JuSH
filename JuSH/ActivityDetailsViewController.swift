@@ -26,22 +26,26 @@ class ActivityDetailsViewController: UIViewController {
     
     
     @IBOutlet weak var overlay: UIVisualEffectView!
-    
-    @IBOutlet weak var vibrantBox: UIVisualEffectView!
 
     @IBAction func onButtonGoTouched(sender: AnyObject) {
-        overlay.hidden = false
-       /* let constraints: [NSLayoutConstraint]  =vibrantBox.constraints() as! [NSLayoutConstraint]
-        for i in 0...constraints.count{
-            var c = constraints[i]
-            println(c. +":" + c)
-        } */
-        let b: CGRect = vibrantBox.bounds
-        NSLog("ORIGN %f : %f", b.origin.x, b.origin.y)
-        NSLog("Size: %f x %f", b.width, b.height)
+        self.overlay.hidden = false
+
     }
     
     
+    @IBAction func onNevermindTouched(sender: AnyObject) {
+        hideModal()
+    }
+    
+    
+    @IBAction func onGoForItTouched(sender: AnyObject) {
+        hideModal()
+    }
+    
+    func hideModal(){
+        self.overlay.hidden = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
