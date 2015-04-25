@@ -30,7 +30,7 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:ActivityCard = self.activitiesTableView.dequeueReusableCellWithIdentifier("activityCard") as! ActivityCard
-        let activity = activitiesList[indexPath.item]
+        let activity = activitiesList[indexPath.row]
         cell.userNameLabel?.text = "with " + activity.user_name
         cell.actDescription?.text = activity.description
         cell.whereWhenLabel?.text = activity.date_time  + ", " + activity.venue_name
@@ -38,18 +38,21 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        // selectedActivityInTable = activitiesList[indexPath.row]
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        var path = self.activitiesTableView.indexPathForSelectedRow()
+        let detailsView:ActivityDetailsViewController = segue.destinationViewController as! ActivityDetailsViewController
+        detailsView.selectedActivity = activitiesList[path!.row]
     }
-    */
+    
 
 }

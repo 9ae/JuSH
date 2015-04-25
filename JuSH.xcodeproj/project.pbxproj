@@ -18,6 +18,7 @@
 		00BA99B21AE70A2C004826BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00BA99B01AE70A2C004826BD /* LaunchScreen.xib */; };
 		00BA99BE1AE70A2C004826BD /* JuSHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA99BD1AE70A2C004826BD /* JuSHTests.swift */; };
 		00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */; };
+		00DBD5031AEB3D5D003FEE24 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */; };
 		00EC325C1AE9E35200E3D48F /* InterestTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC325B1AE9E35200E3D48F /* InterestTag.swift */; };
 		00EC325E1AE9E51800E3D48F /* TagCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC325D1AE9E51800E3D48F /* TagCollectionController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		00BA99BC1AE70A2C004826BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BA99BD1AE70A2C004826BD /* JuSHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuSHTests.swift; sourceTree = "<group>"; };
 		00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAccountsViewController.swift; sourceTree = "<group>"; };
+		00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		00EC325B1AE9E35200E3D48F /* InterestTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestTag.swift; sourceTree = "<group>"; };
 		00EC325D1AE9E51800E3D48F /* TagCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 				00EC325D1AE9E51800E3D48F /* TagCollectionController.swift */,
 				0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */,
 				0045B51F1AEB1397008BC64C /* ActivityCard.swift */,
+				00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DBD5031AEB3D5D003FEE24 /* ActivityDetailsViewController.swift in Sources */,
 				00BA99AA1AE70A2C004826BD /* ViewController.swift in Sources */,
 				00BA99A81AE70A2C004826BD /* AppDelegate.swift in Sources */,
 				0045B5201AEB1397008BC64C /* ActivityCard.swift in Sources */,
