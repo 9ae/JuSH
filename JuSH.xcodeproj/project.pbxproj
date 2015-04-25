@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000D4C9F1AEB03AE007E23AF /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D4C9E1AEB03AE007E23AF /* Activities.swift */; };
+		0045B51C1AEB0ABA008BC64C /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045B51B1AEB0ABA008BC64C /* Tags.swift */; };
+		0045B51E1AEB0F3E008BC64C /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */; };
+		0045B5201AEB1397008BC64C /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045B51F1AEB1397008BC64C /* ActivityCard.swift */; };
 		00BA99A81AE70A2C004826BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA99A71AE70A2C004826BD /* AppDelegate.swift */; };
 		00BA99AA1AE70A2C004826BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA99A91AE70A2C004826BD /* ViewController.swift */; };
 		00BA99AD1AE70A2C004826BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BA99AB1AE70A2C004826BD /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000D4C9E1AEB03AE007E23AF /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		0045B51B1AEB0ABA008BC64C /* Tags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		0045B51F1AEB1397008BC64C /* ActivityCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
 		00BA99A21AE70A2C004826BD /* JuSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BA99A61AE70A2C004826BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BA99A71AE70A2C004826BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000D4C9D1AEB0273007E23AF /* FakeData */ = {
+			isa = PBXGroup;
+			children = (
+				000D4C9E1AEB03AE007E23AF /* Activities.swift */,
+				0045B51B1AEB0ABA008BC64C /* Tags.swift */,
+			);
+			name = FakeData;
+			sourceTree = "<group>";
+		};
 		00BA99991AE70A2C004826BD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +100,7 @@
 		00BA99A41AE70A2C004826BD /* JuSH */ = {
 			isa = PBXGroup;
 			children = (
+				000D4C9D1AEB0273007E23AF /* FakeData */,
 				00D4AE971AE74902005D209F /* View Controllers */,
 				00BA99A71AE70A2C004826BD /* AppDelegate.swift */,
 				00BA99A91AE70A2C004826BD /* ViewController.swift */,
@@ -125,6 +143,8 @@
 				00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */,
 				00EC325B1AE9E35200E3D48F /* InterestTag.swift */,
 				00EC325D1AE9E51800E3D48F /* TagCollectionController.swift */,
+				0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */,
+				0045B51F1AEB1397008BC64C /* ActivityCard.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -231,7 +251,11 @@
 			files = (
 				00BA99AA1AE70A2C004826BD /* ViewController.swift in Sources */,
 				00BA99A81AE70A2C004826BD /* AppDelegate.swift in Sources */,
+				0045B5201AEB1397008BC64C /* ActivityCard.swift in Sources */,
+				0045B51C1AEB0ABA008BC64C /* Tags.swift in Sources */,
+				000D4C9F1AEB03AE007E23AF /* Activities.swift in Sources */,
 				00EC325C1AE9E35200E3D48F /* InterestTag.swift in Sources */,
+				0045B51E1AEB0F3E008BC64C /* ActivitiesViewController.swift in Sources */,
 				00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */,
 				00EC325E1AE9E51800E3D48F /* TagCollectionController.swift in Sources */,
 			);

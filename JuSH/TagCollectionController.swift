@@ -8,11 +8,10 @@
 
 import UIKit
 
+
 let reuseIdentifier = "Tag"
 
 class TagCollectionController: UICollectionViewController {
-    
-    let myInterests = ["running", "food", "hiking", "basketball"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
