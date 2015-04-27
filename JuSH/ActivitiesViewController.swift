@@ -34,6 +34,7 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.userNameLabel?.text = "with " + activity.user_name
         cell.actDescription?.text = activity.description
         cell.whereWhenLabel?.text = activity.date_time  + ", " + activity.venue_name
+        cell.userPictureView.image = UIImage(named: "user_" + activity.user_name )
         return cell
     }
     

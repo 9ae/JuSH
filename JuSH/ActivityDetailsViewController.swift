@@ -24,8 +24,10 @@ class ActivityDetailsViewController: UIViewController {
     
     @IBOutlet weak var buttonGo: UIButton!
     
-    
     @IBOutlet weak var overlay: UIVisualEffectView!
+    
+    
+    @IBOutlet weak var imageUserAvatar: UIImageView!
 
     @IBAction func onButtonGoTouched(sender: AnyObject) {
         self.overlay.hidden = false
@@ -34,11 +36,6 @@ class ActivityDetailsViewController: UIViewController {
     
     
     @IBAction func onNevermindTouched(sender: AnyObject) {
-        hideModal()
-    }
-    
-    
-    @IBAction func onGoForItTouched(sender: AnyObject) {
         hideModal()
     }
     
@@ -55,6 +52,7 @@ class ActivityDetailsViewController: UIViewController {
         self.labelActivityTime.text = "at " + self.selectedActivity!.date_time
         self.labelActivityLocation.text = "on " + self.selectedActivity!.venue_name
         
+        self.imageUserAvatar.image = UIImage(named: "user_"+self.selectedActivity!.user_name )
         self.overlay.hidden = true
     
     }
