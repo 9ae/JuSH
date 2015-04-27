@@ -21,7 +21,7 @@ class MyActivitesViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifierActivitiesUserAvatar)
+      //  self.collectionView!.registerClass(AvatarWithNameCell.self, forCellWithReuseIdentifier: reuseIdentifierActivitiesUserAvatar)
 
         // Do any additional setup after loading the view.
     }
@@ -53,14 +53,16 @@ class MyActivitesViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifierActivitiesUserAvatar, forIndexPath: indexPath) as! UICollectionViewCell
+        let cell : AvatarWithNameCell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifierActivitiesUserAvatar, forIndexPath: indexPath) as! AvatarWithNameCell
     
-        // Configure the cell
         var actInterestedParties = myActsList[indexPath.section].interested
-        let userAvatarSource = UIImage(named: "user_" + actInterestedParties[indexPath.item].first_name)
+        cell.imgUserAvatar?.image = UIImage(named: "user_" + actInterestedParties[indexPath.item].first_name)
+        cell.labelUserName?.text = actInterestedParties[indexPath.item].first_name
+        
+   /*     let userAvatarSource = UIImage(named: "user_" + actInterestedParties[indexPath.item].first_name)
         var userAvatar = UIImageView(image: userAvatarSource)
         userAvatar.bounds = cell.bounds
-        cell.addSubview(userAvatar)
+        cell.addSubview(userAvatar) */
         return cell
     }
     
