@@ -18,6 +18,9 @@
 		00BA99B21AE70A2C004826BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00BA99B01AE70A2C004826BD /* LaunchScreen.xib */; };
 		00BA99BE1AE70A2C004826BD /* JuSHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA99BD1AE70A2C004826BD /* JuSHTests.swift */; };
 		00CFE6B51AEDF38F00E0DAC9 /* AvatarWithNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6B41AEDF38F00E0DAC9 /* AvatarWithNameCell.swift */; };
+		00CFE6B71AEDF97A00E0DAC9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6B61AEDF97A00E0DAC9 /* NotificationCell.swift */; };
+		00CFE6B91AEDFDEC00E0DAC9 /* Plans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */; };
+		00CFE6BB1AEDFEC200E0DAC9 /* PlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6BA1AEDFEC200E0DAC9 /* PlansTableViewController.swift */; };
 		00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */; };
 		00DBD5031AEB3D5D003FEE24 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */; };
 		00E7F3AE1AEDB44000317219 /* MyActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */; };
@@ -53,6 +56,9 @@
 		00BA99BC1AE70A2C004826BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BA99BD1AE70A2C004826BD /* JuSHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuSHTests.swift; sourceTree = "<group>"; };
 		00CFE6B41AEDF38F00E0DAC9 /* AvatarWithNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarWithNameCell.swift; sourceTree = "<group>"; };
+		00CFE6B61AEDF97A00E0DAC9 /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plans.swift; sourceTree = "<group>"; };
+		00CFE6BA1AEDFEC200E0DAC9 /* PlansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansTableViewController.swift; sourceTree = "<group>"; };
 		00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAccountsViewController.swift; sourceTree = "<group>"; };
 		00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivitesViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 				000D4C9E1AEB03AE007E23AF /* Activities.swift */,
 				0045B51B1AEB0ABA008BC64C /* Tags.swift */,
 				00E7F3AF1AEDBACF00317219 /* Users.swift */,
+				00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */,
 			);
 			name = FakeData;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 				0045B51F1AEB1397008BC64C /* ActivityCard.swift */,
 				00EC325B1AE9E35200E3D48F /* InterestTag.swift */,
 				00CFE6B41AEDF38F00E0DAC9 /* AvatarWithNameCell.swift */,
+				00CFE6B61AEDF97A00E0DAC9 /* NotificationCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */,
 				00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */,
 				00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */,
+				00CFE6BA1AEDFEC200E0DAC9 /* PlansTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -272,10 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CFE6BB1AEDFEC200E0DAC9 /* PlansTableViewController.swift in Sources */,
 				00DBD5031AEB3D5D003FEE24 /* ActivityDetailsViewController.swift in Sources */,
 				00BA99AA1AE70A2C004826BD /* ViewController.swift in Sources */,
 				00BA99A81AE70A2C004826BD /* AppDelegate.swift in Sources */,
 				00CFE6B51AEDF38F00E0DAC9 /* AvatarWithNameCell.swift in Sources */,
+				00CFE6B91AEDFDEC00E0DAC9 /* Plans.swift in Sources */,
 				0045B5201AEB1397008BC64C /* ActivityCard.swift in Sources */,
 				00E7F3B01AEDBACF00317219 /* Users.swift in Sources */,
 				0045B51C1AEB0ABA008BC64C /* Tags.swift in Sources */,
@@ -285,6 +296,7 @@
 				00E7F3AE1AEDB44000317219 /* MyActivitesViewController.swift in Sources */,
 				0045B51E1AEB0F3E008BC64C /* ActivitiesViewController.swift in Sources */,
 				00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */,
+				00CFE6B71AEDF97A00E0DAC9 /* NotificationCell.swift in Sources */,
 				00EC325E1AE9E51800E3D48F /* TagCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
