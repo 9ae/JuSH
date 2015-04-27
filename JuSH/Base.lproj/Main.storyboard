@@ -2043,19 +2043,28 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
-                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                        <rect key="frame" x="179" y="14" width="42" height="21"/>
-                                    </variation>
                                 </label>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="66q-jc-JOh" firstAttribute="centerX" secondItem="S3A-LU-PuC" secondAttribute="centerX" id="hWk-sU-tJM"/>
+                                <constraint firstItem="66q-jc-JOh" firstAttribute="top" secondItem="S3A-LU-PuC" secondAttribute="topMargin" constant="6" id="yJm-sB-xx6"/>
+                            </constraints>
                             <variation key="default">
                                 <mask key="subviews">
                                     <exclude reference="66q-jc-JOh"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="hWk-sU-tJM"/>
+                                    <exclude reference="yJm-sB-xx6"/>
                                 </mask>
                             </variation>
                             <variation key="widthClass=compact">
                                 <mask key="subviews">
                                     <include reference="66q-jc-JOh"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="hWk-sU-tJM"/>
+                                    <include reference="yJm-sB-xx6"/>
                                 </mask>
                             </variation>
                             <connections>
