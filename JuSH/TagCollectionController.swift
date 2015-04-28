@@ -12,6 +12,8 @@ import UIKit
 let reuseIdentifier = "Tag"
 
 class TagCollectionController: UICollectionViewController {
+    
+    var interestTags = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,12 +50,12 @@ class TagCollectionController: UICollectionViewController {
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return myInterests.count
+        return interestTags.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! InterestTag
-        cell.tagLabel?.text = myInterests[indexPath.item]
+        cell.tagLabel?.text = interestTags[indexPath.item]
         return cell
     }
 

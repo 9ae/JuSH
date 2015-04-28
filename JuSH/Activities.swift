@@ -23,9 +23,8 @@ let activitiesList = [Activity(user_name: "Finn", day_flag: 1 ,date_time: "Tuesd
 
 let myActsList = [
     Activity(
-        user_name: "BMO", day_flag: 1, date_time: "Tonight", venue_name: "X", description: "x", details: "x", interested: [
-            User(first_name:"Finn"), User(first_name:"Marceline")], open: false ),
+        user_name: "BMO", day_flag: 1, date_time: "Tonight", venue_name: "X", description: "x", details: "x", interested: [Finn, Marce], open: false ),
     Activity(
         user_name: "BMO", day_flag: 1, date_time: "Tomorrow Afternoon", venue_name: "Y", description: "xy", details: "xy", interested: [
-            User(first_name:"Finn"), User(first_name:"Bubblegum")], open: false)
+            Finn, Bubble], open: false)
 ]
