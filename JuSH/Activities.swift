@@ -9,7 +9,7 @@
 import Foundation
 
 struct Activity {
-    var user_name: String
+    var user: User
     var day_flag: NSInteger
     var date_time: String
     var venue_name: String
@@ -19,12 +19,12 @@ struct Activity {
     var open: Bool
 }
 
-let activitiesList = [Activity(user_name: "Finn", day_flag: 1 ,date_time: "Tuesday afternoon", venue_name: "Madison Sq. Park", description: "Walk our dogs", details: "Walk with me and my dog Jake", interested: [], open: false)]
+let activitiesList = [Activity(user: Finn, day_flag: 1 ,date_time: "Tuesday afternoon", venue_name: "Madison Sq. Park", description: "Walk our dogs", details: "Walk with me and my dog Jake", interested: [], open: false)]
 
 let myActsList = [
     Activity(
-        user_name: "BMO", day_flag: 1, date_time: "Tonight", venue_name: "X", description: "x", details: "x", interested: [Finn, Marce], open: false ),
+        user: iAm, day_flag: 1, date_time: "Tonight", venue_name: "X", description: "x", details: "x", interested: [Finn, Marce], open: false ),
     Activity(
-        user_name: "BMO", day_flag: 1, date_time: "Tomorrow Afternoon", venue_name: "Y", description: "xy", details: "xy", interested: [
+        user: iAm, day_flag: 1, date_time: "Tomorrow Afternoon", venue_name: "Y", description: "xy", details: "xy", interested: [
             Finn, Bubble], open: false)
 ]

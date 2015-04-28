@@ -20,6 +20,8 @@ class ActivityDetailsViewController: UIViewController {
     @IBOutlet weak var labelActivityTime: UILabel!
     @IBOutlet weak var labelActivityLocation: UILabel!
     
+    @IBOutlet weak var btnAvatar: UIButton!
+    
     @IBOutlet weak var buttonMapLocation: UIButton!
     
     @IBOutlet weak var buttonGo: UIButton!
@@ -47,12 +49,11 @@ class ActivityDetailsViewController: UIViewController {
         super.viewDidLoad()
 
        self.labelActivityDescription.text = self.selectedActivity!.description
-        self.labelUserName.text = self.selectedActivity!.user_name
+        self.labelUserName.text = self.selectedActivity!.user.first_name
         self.textActivityDetailText.text = self.selectedActivity!.details
         self.labelActivityTime.text = "at " + self.selectedActivity!.date_time
         self.labelActivityLocation.text = "on " + self.selectedActivity!.venue_name
-        
-        self.imageUserAvatar.image = UIImage(named: "user_"+self.selectedActivity!.user_name )
+        self.btnAvatar.setImage(UIImage(named: "user_"+self.selectedActivity!.user.first_name ), forState: UIControlState.Normal)
         self.overlay.hidden = true
     
     }
@@ -62,15 +63,15 @@ class ActivityDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "activityDetail2Profile"){
+            let profileView : OthersProfileViewController = segue.destinationViewController as! OthersProfileViewController
+            profileView.showUser = selectedActivity?.user
+        }
     }
-    */
+    
 
 }

@@ -24,6 +24,7 @@
 		00CFE6B71AEDF97A00E0DAC9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6B61AEDF97A00E0DAC9 /* NotificationCell.swift */; };
 		00CFE6B91AEDFDEC00E0DAC9 /* Plans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */; };
 		00CFE6BB1AEDFEC200E0DAC9 /* PlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6BA1AEDFEC200E0DAC9 /* PlansTableViewController.swift */; };
+		00D159CD1AF03F800098AA73 /* OthersProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D159CC1AF03F800098AA73 /* OthersProfileViewController.swift */; };
 		00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */; };
 		00DBD5031AEB3D5D003FEE24 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */; };
 		00E7F3AE1AEDB44000317219 /* MyActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */; };
@@ -65,6 +66,7 @@
 		00CFE6B61AEDF97A00E0DAC9 /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plans.swift; sourceTree = "<group>"; };
 		00CFE6BA1AEDFEC200E0DAC9 /* PlansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansTableViewController.swift; sourceTree = "<group>"; };
+		00D159CC1AF03F800098AA73 /* OthersProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersProfileViewController.swift; sourceTree = "<group>"; };
 		00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAccountsViewController.swift; sourceTree = "<group>"; };
 		00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivitesViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				001E68E91AEF093B00022FCC /* SchedulerController.swift */,
 				00CFC6C61AEF39F800012BA1 /* ProfileViewController.swift */,
 				00CFC6C81AEF3C8500012BA1 /* MyProfileViewController.swift */,
+				00D159CC1AF03F800098AA73 /* OthersProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				00E7F3B21AEDC86700317219 /* ActivityHeaderCell.swift in Sources */,
 				00E7F3AE1AEDB44000317219 /* MyActivitesViewController.swift in Sources */,
 				0045B51E1AEB0F3E008BC64C /* ActivitiesViewController.swift in Sources */,
+				00D159CD1AF03F800098AA73 /* OthersProfileViewController.swift in Sources */,
 				00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */,
 				00CFE6B71AEDF97A00E0DAC9 /* NotificationCell.swift in Sources */,
 				00EC325E1AE9E51800E3D48F /* TagCollectionController.swift in Sources */,

@@ -31,10 +31,10 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:ActivityCard = self.activitiesTableView.dequeueReusableCellWithIdentifier("activityCard") as! ActivityCard
         let activity = activitiesList[indexPath.row]
-        cell.userNameLabel?.text = "with " + activity.user_name
+        cell.userNameLabel?.text = "with " + activity.user.first_name
         cell.actDescription?.text = activity.description
         cell.whereWhenLabel?.text = activity.date_time  + ", " + activity.venue_name
-        cell.userPictureView.image = UIImage(named: "user_" + activity.user_name )
+        cell.userPictureView.image = UIImage(named: "user_" + activity.user.first_name )
         return cell
     }
     
