@@ -55,8 +55,13 @@ class TagCollectionController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! InterestTag
-        cell.tagLabel?.text = interestTags[indexPath.item]
+        cell.setTagText(interestTags[indexPath.item])
         return cell
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        interestTags.removeAtIndex(indexPath.item)
+        collectionView.reloadData()
     }
 
     // MARK: UICollectionViewDelegate

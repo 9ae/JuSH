@@ -9,7 +9,10 @@
 import UIKit
 
 class InterestTag: UICollectionViewCell {
-
-    @IBOutlet weak var tagLabel: UILabel!
- 
+    
+    @IBOutlet weak var textTag: UITextField!
+    
+    func setTagText(tagName: String){
+        textTag.text = tagName
+    }
 }
