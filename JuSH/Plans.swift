@@ -8,12 +8,18 @@
 
 import Foundation
 
-struct Plans {
-    var userFirstName : String
-    var dateTime: String
-    var works: Bool
+enum NotificationType {
+    case COINKIDONK, GOOD_TIME, BAD_TIME
 }
 
-let myCurrentPlansInTheMaking = [Plans(userFirstName: "Finn", dateTime: "Monday, April 30 3PM", works: false),
-    Plans(userFirstName: "Marceline", dateTime: "Tuesday, May 1 9PM", works: true)
+struct Plans {
+    var userFirstName : String
+    var planDate: String
+    var planTime: String
+    var message: String
+    var noteType: NotificationType
+}
+
+let myCurrentPlansInTheMaking = [Plans(userFirstName: "Finn", planDate: "Monday, April 30", planTime: "3:00 PM", message: "does NOT work for Finn ",  noteType: NotificationType.BAD_TIME ),
+    Plans(userFirstName: "Marceline", planDate: "Tuesday, May 1", planTime: "9:00 PM",  message: "works for Marceline", noteType: NotificationType.GOOD_TIME)
 ]

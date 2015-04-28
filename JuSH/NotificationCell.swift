@@ -16,42 +16,19 @@ class NotificationCell: UITableViewCell {
     @IBOutlet weak var labelDateTime: UILabel!
     @IBOutlet weak var labelDateStatus: UILabel!
     
-    @IBOutlet weak var btnPrimaryAction: UIButton!
-    @IBOutlet weak var btnSecondaryAction: UIButton!
-    
-    @IBAction func onPrimaryAction(sender: AnyObject) {
-        if(secondaryActionEnabled){ //is confirm
+    func setContent(noteType: NotificationType, title: String, subtitle: String, userFirstName: String){
+        secondaryActionEnabled = noteType == NotificationType.GOOD_TIME
         
-        } else { //is reschedule
+        labelDateTime.text = title
+        labelDateStatus.text = subtitle
         
-        }
-    }
-    
-    
-    @IBAction func onSecondayAction(sender: AnyObject) {
-        if (!secondaryActionEnabled){
-            return
-        }
-    }
-    
-    func setContent(confirmReady: Bool, userFirstName: String, dateTime: String){
-        secondaryActionEnabled = confirmReady
-        var worksPrefix: String
         if(secondaryActionEnabled){
-            btnPrimaryAction.setTitle("Confirm", forState: UIControlState.Normal)
-            btnSecondaryAction.setTitle("Reschedule", forState: UIControlState.Normal)
-            worksPrefix = "works"
             labelDateStatus.textColor = UIColor.greenColor()
         } else {
-            btnPrimaryAction.setTitle("Reschedule", forState: UIControlState.Normal)
-            btnSecondaryAction.hidden = true;
-            worksPrefix = "does not work"
             labelDateStatus.textColor = UIColor.redColor()
         }
         
         imgUserAvatar.image = UIImage(named: "user_" + userFirstName)
-        labelDateTime.text = dateTime
-        labelDateStatus.text = worksPrefix + " for " + userFirstName
         
     }
 
