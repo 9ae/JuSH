@@ -12,10 +12,43 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     @IBOutlet weak var activitiesTableView: UITableView!
-
+    @IBOutlet weak var scDayFilter: UISegmentedControl!
+    
+    var filteredActList : [Activity]?
+    
+    var selectedFilter = WhenDay.TODAY
+    
+    @IBAction func onDayFiltered(sender: AnyObject) {
+        switch scDayFilter.selectedSegmentIndex
+        {
+        case 0:
+            selectedFilter = WhenDay.TODAY
+            break
+        case 1:
+            selectedFilter = WhenDay.TOMORROW
+            break
+        case 2:
+            selectedFilter = WhenDay.THIS_WEEK
+            break
+        default:
+            break
+        }
+        refilterList()
+        activitiesTableView.reloadData()
+    }
+    
+    func refilterList(){
+        filteredActList = [Activity]()
+        for act in activitiesList {
+            if act.day_flag == selectedFilter {
+                filteredActList?.append(act)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        refilterList()
     //    self.activitiesTableView.registerClass(ActivityCard.self, forCellReuseIdentifier: "activityCard")
     }
 
@@ -25,12 +58,12 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return activitiesList.count
+        return filteredActList!.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:ActivityCard = self.activitiesTableView.dequeueReusableCellWithIdentifier("activityCard") as! ActivityCard
-        let activity = activitiesList[indexPath.row]
+        let activity = filteredActList![indexPath.row]
         cell.userNameLabel?.text = "with " + activity.user.first_name
         cell.actDescription?.text = activity.description
         cell.whereWhenLabel?.text = activity.date_time  + ", " + activity.venue_name
@@ -52,7 +85,7 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
         // Pass the selected object to the new view controller.
         var path = self.activitiesTableView.indexPathForSelectedRow()
         let detailsView:ActivityDetailsViewController = segue.destinationViewController as! ActivityDetailsViewController
-        detailsView.selectedActivity = activitiesList[path!.row]
+        detailsView.selectedActivity = filteredActList![path!.row]
     }
     
 

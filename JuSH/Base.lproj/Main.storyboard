@@ -548,6 +548,9 @@
                                     <segment title="Tomorrow"/>
                                     <segment title="This Week"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onDayFiltered:" destination="6a2-Yn-i3o" eventType="valueChanged" id="cLY-UP-JPX"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-oi-ZlA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -742,6 +745,7 @@
                     <navigationItem key="navigationItem" title="Discover" id="r43-Ru-uWn"/>
                     <connections>
                         <outlet property="activitiesTableView" destination="Cql-oi-ZlA" id="oij-iX-miN"/>
+                        <outlet property="scDayFilter" destination="QpP-f7-AKr" id="scf-7O-JDm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cic-U3-3ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -778,7 +782,7 @@
                                     <constraint firstAttribute="height" constant="100" id="4lm-Xk-tJd"/>
                                     <constraint firstAttribute="width" constant="100" id="S6f-Uj-xkp"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
