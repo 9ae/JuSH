@@ -25,6 +25,7 @@
 		00CFE6B91AEDFDEC00E0DAC9 /* Plans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */; };
 		00CFE6BB1AEDFEC200E0DAC9 /* PlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFE6BA1AEDFEC200E0DAC9 /* PlansTableViewController.swift */; };
 		00D159CD1AF03F800098AA73 /* OthersProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D159CC1AF03F800098AA73 /* OthersProfileViewController.swift */; };
+		00D159CF1AF051E30098AA73 /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D159CE1AF051E30098AA73 /* PreferencesTableViewController.swift */; };
 		00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */; };
 		00DBD5031AEB3D5D003FEE24 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */; };
 		00E7F3AE1AEDB44000317219 /* MyActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */; };
@@ -67,6 +68,7 @@
 		00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plans.swift; sourceTree = "<group>"; };
 		00CFE6BA1AEDFEC200E0DAC9 /* PlansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansTableViewController.swift; sourceTree = "<group>"; };
 		00D159CC1AF03F800098AA73 /* OthersProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersProfileViewController.swift; sourceTree = "<group>"; };
+		00D159CE1AF051E30098AA73 /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAccountsViewController.swift; sourceTree = "<group>"; };
 		00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivitesViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */,
+				00D159CE1AF051E30098AA73 /* PreferencesTableViewController.swift */,
 				00EC325D1AE9E51800E3D48F /* TagCollectionController.swift */,
 				0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */,
 				00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */,
@@ -311,6 +314,7 @@
 				00E7F3AE1AEDB44000317219 /* MyActivitesViewController.swift in Sources */,
 				0045B51E1AEB0F3E008BC64C /* ActivitiesViewController.swift in Sources */,
 				00D159CD1AF03F800098AA73 /* OthersProfileViewController.swift in Sources */,
+				00D159CF1AF051E30098AA73 /* PreferencesTableViewController.swift in Sources */,
 				00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */,
 				00CFE6B71AEDF97A00E0DAC9 /* NotificationCell.swift in Sources */,
 				00EC325E1AE9E51800E3D48F /* TagCollectionController.swift in Sources */,
