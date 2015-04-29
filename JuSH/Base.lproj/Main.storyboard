@@ -2938,7 +2938,7 @@
                             <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myActCell" id="nc2-hT-mOz" customClass="AvatarWithNameCell" customModule="JuSH" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="myActCell" id="nc2-hT-mOz" customClass="AvatarWithNameCell" customModule="JuSH" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2964,12 +2964,14 @@
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X0H-9o-u69">
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X0H-9o-u69">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <gestureRecognizers/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="bottomMargin" secondItem="X0H-9o-u69" secondAttribute="bottom" constant="12" id="Gwe-6b-Var"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="dvA-Ok-K2a" secondAttribute="bottom" constant="-8" id="NyK-K3-ydG"/>
@@ -3018,6 +3020,7 @@
                                 <connections>
                                     <outlet property="imgUserAvatar" destination="X0H-9o-u69" id="xd5-Gw-XcD"/>
                                     <outlet property="labelUserName" destination="dvA-Ok-K2a" id="Bcv-zA-8Kj"/>
+                                    <segue destination="2kN-S3-p1o" kind="show" identifier="plans2profile" id="P2D-6X-uoa"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -3091,11 +3094,12 @@
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="notificationCell" rowHeight="95" id="zHd-Mc-okU" customClass="NotificationCell" customModule="JuSH" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zHd-Mc-okU" id="gUM-hG-jNt">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="zHd-Mc-okU" id="gUM-hG-jNt">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iie-FN-L9N">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="QMz-uu-HGW"/>
                                                 <constraint firstAttribute="width" constant="50" id="yOo-BK-55U"/>
@@ -3158,6 +3162,7 @@
                                             </variation>
                                         </label>
                                     </subviews>
+                                    <gestureRecognizers/>
                                     <constraints>
                                         <constraint firstItem="iie-FN-L9N" firstAttribute="leading" secondItem="gUM-hG-jNt" secondAttribute="leadingMargin" constant="2" id="9r7-av-5Om"/>
                                         <constraint firstItem="03b-3I-MJv" firstAttribute="top" secondItem="gUM-hG-jNt" secondAttribute="topMargin" constant="-3" id="O1h-sR-HSD"/>
@@ -3359,7 +3364,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="eP3-Eb-Ky6"/>
         <segue reference="NII-k2-5N6"/>
-        <segue reference="2ju-E1-mWQ"/>
+        <segue reference="P2D-6X-uoa"/>
+        <segue reference="f2Y-Za-Npn"/>
         <segue reference="R7O-gg-orG"/>
     </inferredMetricsTieBreakers>
 </document>

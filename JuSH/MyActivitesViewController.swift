@@ -73,6 +73,11 @@ class MyActivitesViewController: UICollectionViewController {
         
         return sect
     }
+    /*
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        selectedUser = myActsList[indexPath.section].interested[indexPath.item]
+          performSegueWithIdentifier("plans2profile", sender: self)
+    }*/
 
     // MARK: UICollectionViewDelegate
 
@@ -99,10 +104,23 @@ class MyActivitesViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
         return false
     }
-
     override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
     
+        performSegueWithIdentifier("plans2profile", sender: self)
     }
     */
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "plans2profile"){
+            let profileView : OthersProfileViewController = segue.destinationViewController as! OthersProfileViewController
+            
+            let cell : AvatarWithNameCell = sender as! AvatarWithNameCell
+            let ind = self.collectionView?.indexPathForCell(cell)
+            let  selectedUser = myActsList[ind!.section].interested[ind!.item]
+            
+            profileView.showUser = selectedUser
+        }
+    }
+    
+    
 }
