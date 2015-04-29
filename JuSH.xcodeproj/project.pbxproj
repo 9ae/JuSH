@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		000D4C9F1AEB03AE007E23AF /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D4C9E1AEB03AE007E23AF /* Activities.swift */; };
 		001E68EA1AEF093B00022FCC /* SchedulerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E68E91AEF093B00022FCC /* SchedulerController.swift */; };
-		0045B51C1AEB0ABA008BC64C /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045B51B1AEB0ABA008BC64C /* Tags.swift */; };
 		0045B51E1AEB0F3E008BC64C /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */; };
 		0045B5201AEB1397008BC64C /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045B51F1AEB1397008BC64C /* ActivityCard.swift */; };
 		00BA99A81AE70A2C004826BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA99A71AE70A2C004826BD /* AppDelegate.swift */; };
@@ -49,7 +48,6 @@
 /* Begin PBXFileReference section */
 		000D4C9E1AEB03AE007E23AF /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		001E68E91AEF093B00022FCC /* SchedulerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerController.swift; sourceTree = "<group>"; };
-		0045B51B1AEB0ABA008BC64C /* Tags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 		0045B51D1AEB0F3E008BC64C /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		0045B51F1AEB1397008BC64C /* ActivityCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
 		00BA99A21AE70A2C004826BD /* JuSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				000D4C9E1AEB03AE007E23AF /* Activities.swift */,
-				0045B51B1AEB0ABA008BC64C /* Tags.swift */,
 				00E7F3AF1AEDBACF00317219 /* Users.swift */,
 				00CFE6B81AEDFDEC00E0DAC9 /* Plans.swift */,
 			);
@@ -311,7 +308,6 @@
 				00CFC6C71AEF39F800012BA1 /* ProfileViewController.swift in Sources */,
 				00CFC6C91AEF3C8500012BA1 /* MyProfileViewController.swift in Sources */,
 				00E7DE0E1AF09D7F00C89752 /* PostActivityViewController.swift in Sources */,
-				0045B51C1AEB0ABA008BC64C /* Tags.swift in Sources */,
 				000D4C9F1AEB03AE007E23AF /* Activities.swift in Sources */,
 				00EC325C1AE9E35200E3D48F /* InterestTag.swift in Sources */,
 				00E7F3B21AEDC86700317219 /* ActivityHeaderCell.swift in Sources */,

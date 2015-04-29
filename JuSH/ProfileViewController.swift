@@ -89,6 +89,9 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
             if(allowEdit){
                 tagCloud?.editable = true
             }
+            if( self.profileUser?.first_name != iAm.first_name ){
+              tagCloud?.colorTags = true
+            }
         }
     }
     

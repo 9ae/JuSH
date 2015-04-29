@@ -1925,25 +1925,25 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="XPt-UB-CYu"/>
-                                <exclude reference="Afb-fa-jby"/>
-                                <exclude reference="GzU-Cp-tj9"/>
                                 <exclude reference="Ds4-Z0-Dv7"/>
                                 <exclude reference="TQS-Eb-GuJ"/>
-                                <exclude reference="GT3-do-MQS"/>
-                                <exclude reference="ezc-AD-4CQ"/>
-                                <exclude reference="tI5-oR-qFL"/>
                                 <exclude reference="Cq9-Tx-HFj"/>
                                 <exclude reference="Gyf-Pf-LG6"/>
                                 <exclude reference="iaZ-Tj-8bH"/>
+                                <exclude reference="GT3-do-MQS"/>
+                                <exclude reference="ezc-AD-4CQ"/>
+                                <exclude reference="tI5-oR-qFL"/>
+                                <exclude reference="Afb-fa-jby"/>
+                                <exclude reference="GzU-Cp-tj9"/>
                                 <exclude reference="VdZ-XY-ASt"/>
                                 <exclude reference="pYw-t4-5oD"/>
-                                <exclude reference="Kng-bg-0z9"/>
-                                <exclude reference="V8e-qV-l4S"/>
+                                <exclude reference="U9r-S8-1D1"/>
                                 <exclude reference="U6z-Cw-JG7"/>
                                 <exclude reference="llh-rF-2eL"/>
                                 <exclude reference="gmd-Ng-Mf7"/>
                                 <exclude reference="m6c-ah-S4k"/>
-                                <exclude reference="U9r-S8-1D1"/>
+                                <exclude reference="Kng-bg-0z9"/>
+                                <exclude reference="V8e-qV-l4S"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1960,25 +1960,25 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="XPt-UB-CYu"/>
-                                <include reference="Afb-fa-jby"/>
-                                <include reference="GzU-Cp-tj9"/>
                                 <include reference="Ds4-Z0-Dv7"/>
                                 <include reference="TQS-Eb-GuJ"/>
-                                <include reference="GT3-do-MQS"/>
-                                <include reference="ezc-AD-4CQ"/>
-                                <include reference="tI5-oR-qFL"/>
                                 <include reference="Cq9-Tx-HFj"/>
                                 <include reference="Gyf-Pf-LG6"/>
                                 <include reference="iaZ-Tj-8bH"/>
+                                <include reference="GT3-do-MQS"/>
+                                <include reference="ezc-AD-4CQ"/>
+                                <include reference="tI5-oR-qFL"/>
+                                <include reference="Afb-fa-jby"/>
+                                <include reference="GzU-Cp-tj9"/>
                                 <include reference="VdZ-XY-ASt"/>
                                 <include reference="pYw-t4-5oD"/>
-                                <include reference="Kng-bg-0z9"/>
-                                <include reference="V8e-qV-l4S"/>
+                                <include reference="U9r-S8-1D1"/>
                                 <include reference="U6z-Cw-JG7"/>
                                 <include reference="llh-rF-2eL"/>
                                 <include reference="gmd-Ng-Mf7"/>
                                 <include reference="m6c-ah-S4k"/>
-                                <include reference="U9r-S8-1D1"/>
+                                <include reference="Kng-bg-0z9"/>
+                                <include reference="V8e-qV-l4S"/>
                             </mask>
                         </variation>
                     </view>
@@ -2391,7 +2391,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="32"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="epV-lr-7z4">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="epV-lr-7z4">
                                             <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                             <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>

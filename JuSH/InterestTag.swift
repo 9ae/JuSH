@@ -23,4 +23,8 @@ class InterestTag: UICollectionViewCell {
     func hideClearIcon(){
         textTag.clearButtonMode = UITextFieldViewMode.Never
     }
+    
+    func colorTag(){
+        textTag.backgroundColor = UIColor.cyanColor()
+    }
 }

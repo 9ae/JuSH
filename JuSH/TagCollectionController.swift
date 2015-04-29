@@ -15,6 +15,7 @@ class TagCollectionController: UICollectionViewController {
     
     var interestTags = [String]()
     var editable = false
+    var colorTags = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,9 +57,13 @@ class TagCollectionController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! InterestTag
-        cell.setTagText(interestTags[indexPath.item])
+        let tagName = interestTags[indexPath.item]
+        cell.setTagText(tagName)
         if(editable){
             cell.showClearIcon()
+        }
+        if((colorTags && contains(iAm.tags, tagName) )){
+            cell.colorTag()
         }
         return cell
     }
