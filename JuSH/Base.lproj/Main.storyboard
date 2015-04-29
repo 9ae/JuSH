@@ -2885,9 +2885,6 @@
                             <outlet property="delegate" destination="X5L-RY-Moq" id="fpS-fI-jre"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="cellEveryone" destination="mrB-1C-pYm" id="umH-uW-zoI"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwm-BO-scJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
