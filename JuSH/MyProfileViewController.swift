@@ -16,6 +16,8 @@ class MyProfileViewController: UIViewController {
         if(profileVC != nil){
             profileVC?.setAllowEditShowables(true)
         }
+        let editButton : UIBarButtonItem = sender as! UIBarButtonItem
+        editButton.enabled = false
     }
     
     override func viewDidLoad() {

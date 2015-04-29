@@ -15,4 +15,12 @@ class InterestTag: UICollectionViewCell {
     func setTagText(tagName: String){
         textTag.text = tagName
     }
+    
+    func showClearIcon(){
+        textTag.clearButtonMode = UITextFieldViewMode.Always
+    }
+    
+    func hideClearIcon(){
+        textTag.clearButtonMode = UITextFieldViewMode.Never
+    }
 }

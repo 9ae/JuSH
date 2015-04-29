@@ -14,6 +14,7 @@ let reuseIdentifier = "Tag"
 class TagCollectionController: UICollectionViewController {
     
     var interestTags = [String]()
+    var editable = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,12 +57,17 @@ class TagCollectionController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! InterestTag
         cell.setTagText(interestTags[indexPath.item])
+        if(editable){
+            cell.showClearIcon()
+        }
         return cell
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        interestTags.removeAtIndex(indexPath.item)
-        collectionView.reloadData()
+        if(editable){
+            interestTags.removeAtIndex(indexPath.item)
+            collectionView.reloadData()
+        }
     }
 
     // MARK: UICollectionViewDelegate

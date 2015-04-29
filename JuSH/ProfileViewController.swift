@@ -52,7 +52,9 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
             inputTag?.hidden = true
         } else {
             inputTag?.hidden = false
+            tagCloud?.editable = true
         }
+        tagCloud?.collectionView?.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,6 +86,9 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         if(segue.identifier=="embedInterestTags"){
             tagCloud = segue.destinationViewController as? TagCollectionController
             tagCloud?.interestTags = profileUser!.tags
+            if(allowEdit){
+                tagCloud?.editable = true
+            }
         }
     }
     
