@@ -28,6 +28,7 @@
 		00D159CF1AF051E30098AA73 /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D159CE1AF051E30098AA73 /* PreferencesTableViewController.swift */; };
 		00D4AE991AE74934005D209F /* SocialAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */; };
 		00DBD5031AEB3D5D003FEE24 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */; };
+		00E7DE0E1AF09D7F00C89752 /* PostActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7DE0D1AF09D7F00C89752 /* PostActivityViewController.swift */; };
 		00E7F3AE1AEDB44000317219 /* MyActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */; };
 		00E7F3B01AEDBACF00317219 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7F3AF1AEDBACF00317219 /* Users.swift */; };
 		00E7F3B21AEDC86700317219 /* ActivityHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7F3B11AEDC86700317219 /* ActivityHeaderCell.swift */; };
@@ -71,6 +72,7 @@
 		00D159CE1AF051E30098AA73 /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		00D4AE981AE74934005D209F /* SocialAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAccountsViewController.swift; sourceTree = "<group>"; };
 		00DBD5021AEB3D5D003FEE24 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
+		00E7DE0D1AF09D7F00C89752 /* PostActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActivityViewController.swift; sourceTree = "<group>"; };
 		00E7F3AD1AEDB44000317219 /* MyActivitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivitesViewController.swift; sourceTree = "<group>"; };
 		00E7F3AF1AEDBACF00317219 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		00E7F3B11AEDC86700317219 /* ActivityHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHeaderCell.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				00CFC6C61AEF39F800012BA1 /* ProfileViewController.swift */,
 				00CFC6C81AEF3C8500012BA1 /* MyProfileViewController.swift */,
 				00D159CC1AF03F800098AA73 /* OthersProfileViewController.swift */,
+				00E7DE0D1AF09D7F00C89752 /* PostActivityViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				00E7F3B01AEDBACF00317219 /* Users.swift in Sources */,
 				00CFC6C71AEF39F800012BA1 /* ProfileViewController.swift in Sources */,
 				00CFC6C91AEF3C8500012BA1 /* MyProfileViewController.swift in Sources */,
+				00E7DE0E1AF09D7F00C89752 /* PostActivityViewController.swift in Sources */,
 				0045B51C1AEB0ABA008BC64C /* Tags.swift in Sources */,
 				000D4C9F1AEB03AE007E23AF /* Activities.swift in Sources */,
 				00EC325C1AE9E35200E3D48F /* InterestTag.swift in Sources */,
