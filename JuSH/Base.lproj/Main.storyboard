@@ -2908,7 +2908,7 @@
         <scene sceneID="cw1-39-U3g">
             <objects>
                 <navigationController title="My Plans" automaticallyAdjustsScrollViewInsets="NO" id="xWb-J9-cPh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Plans" id="LHz-3e-JLT"/>
+                    <tabBarItem key="tabBarItem" title="My Activities" id="LHz-3e-JLT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v12-9q-P4R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2923,10 +2923,10 @@
             </objects>
             <point key="canvasLocation" x="846" y="1233"/>
         </scene>
-        <!--My Plans-->
+        <!--My Activities-->
         <scene sceneID="0n9-Vh-gTE">
             <objects>
-                <collectionViewController id="792-70-02r" customClass="MyActivitesViewController" customModule="JuSH" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="My Activities" id="792-70-02r" customClass="MyActivitesViewController" customModule="JuSH" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5XS-7x-YQR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3066,8 +3066,8 @@
                             <outlet property="delegate" destination="792-70-02r" id="pG3-kA-gtj"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="My Plans" id="vIt-Rg-HTL">
-                        <barButtonItem key="leftBarButtonItem" title="In the Making" id="AxB-4t-7xl">
+                    <navigationItem key="navigationItem" title="My Activities" id="vIt-Rg-HTL">
+                        <barButtonItem key="leftBarButtonItem" title="Notifications" id="AxB-4t-7xl">
                             <connections>
                                 <segue destination="fWz-Yw-3Jd" kind="show" id="fpE-TR-Ghz"/>
                             </connections>
@@ -3083,10 +3083,10 @@
             </objects>
             <point key="canvasLocation" x="1554" y="1233"/>
         </scene>
-        <!--Plans in the Making-->
+        <!--Notifications-->
         <scene sceneID="Zwo-4v-jdf">
             <objects>
-                <tableViewController title="Plans in the Making" id="fWz-Yw-3Jd" customClass="PlansTableViewController" customModule="JuSH" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Notifications" id="fWz-Yw-3Jd" customClass="PlansTableViewController" customModule="JuSH" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" id="4xW-hu-rId">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3215,7 +3215,7 @@
                             <outlet property="delegate" destination="fWz-Yw-3Jd" id="Cbh-uj-lPU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Plans in the Making" id="pcf-6H-vV0"/>
+                    <navigationItem key="navigationItem" title="Notifications" id="pcf-6H-vV0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7X-Yz-F6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3362,10 +3362,10 @@
         <image name="map" width="48" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eP3-Eb-Ky6"/>
-        <segue reference="NII-k2-5N6"/>
+        <segue reference="KxF-Li-DGg"/>
         <segue reference="P2D-6X-uoa"/>
         <segue reference="f2Y-Za-Npn"/>
-        <segue reference="R7O-gg-orG"/>
+        <segue reference="AZH-oY-8vq"/>
+        <segue reference="eP3-Eb-Ky6"/>
     </inferredMetricsTieBreakers>
 </document>
